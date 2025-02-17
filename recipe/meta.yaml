@@ -1,5 +1,5 @@
 {% set name = "k9s" %}
-{% set version = "0.32.7" %}
+{% set version = "0.40.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/derailed/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-    sha256: 508f5d22616d0a741b72171d31df6e6baa45298b3614b7f9a171fe3f05e74365
+    sha256: 81159b9232859eff41e90b529550b38f39b1416ca1a317a829984c789df21abe
     folder: src
   - url: https://raw.githubusercontent.com/xi2/xz/refs/heads/master/LICENSE
     sha256: 5c640056d513f276d56635af7a0bed81cb7eac02a31b6e56d40c416557a8d8ce
@@ -16,7 +16,7 @@ source:
     sha256: aedbbc280610875b83e246f05957369f84acf9abdb86b884a9ff2f5dd65e8ffb
     folder: xz-LICENSE-2
   - url: https://gitlab.com/cznic/mathutil/-/raw/master/LICENSE
-    sha256: 5c640056d513f276d56635af7a0bed81cb7eac02a31b6e56d40c416557a8d8ce
+    sha256: bfa9bf72a72ca009fd62a8f84fca3dca67e51d93af96352723646599898b6cf5
     folder: mathutil-LICENSE
 
 build:
