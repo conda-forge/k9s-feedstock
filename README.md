@@ -3,7 +3,7 @@ About k9s-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/k9s-feedstock/blob/main/LICENSE.txt)
 
-Home: https://k9scli.io
+Home: https://k9scli.io/
 
 Package license: Apache-2.0
 
@@ -11,7 +11,7 @@ Summary: 🐶 Kubernetes CLI To Manage Your Clusters In Style!
 
 Development: https://github.com/derailed/k9s
 
-Documentation: https://k9scli.io
+Documentation: https://k9scli.io/
 
 Current build status
 ====================
