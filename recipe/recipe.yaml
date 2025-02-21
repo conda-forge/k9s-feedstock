@@ -1,6 +1,6 @@
 context:
   name: k9s
-  version: 0.45.5
+  version: 0.40.5
 
 package:
   name: ${{ name|lower }}
@@ -27,9 +27,6 @@ build:
     - if: win
       then: go build -v -o %LIBRARY_BIN%\k9s.exe
       else: go build -v -o $PREFIX/bin/k9s
-    - if: unix
-      # Clear out cache to avoid file not removable warnings
-      then: chmod -R u+w $(go env GOPATH) && rm -r $(go env GOPATH)  # [unix]
   number: 1
 
 requirements:
@@ -38,7 +35,7 @@ requirements:
     - go-licenses
 
 tests:
-  script: k9s --help
+  - script: k9s --help
 
 about:
   homepage: https://k9scli.io
@@ -52,3 +49,8 @@ about:
     - mathutil-LICENSE/LICENSE
   repository: https://github.com/derailed/k9s
   documentation: https://k9scli.io
+
+extra:
+  recipe-maintainers:
+    - pavelzw
+    - ytausch
