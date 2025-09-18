@@ -26,6 +26,9 @@ source:
   - url: https://gitlab.com/cznic/mathutil/-/raw/master/LICENSE
     sha256: bfa9bf72a72ca009fd62a8f84fca3dca67e51d93af96352723646599898b6cf5
     target_directory: mathutil-LICENSE
+  - url: https://raw.githubusercontent.com/deitch/magic/refs/heads/main/LICENSE
+    sha256: 2423c6eb9948e617a61f7a2d1cb463c69d60e599fbae5931551631d2a8730838
+    target_directory: magic-LICENSE
 
 build:
   script:
