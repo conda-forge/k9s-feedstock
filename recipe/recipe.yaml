@@ -30,7 +30,7 @@ source:
 build:
   script:
     - cd src
-    - go-licenses save . --ignore github.com/derailed/popeye --ignore github.com/xi2/xz --ignore modernc.org/mathutil --save_path ../library_licenses
+    - go-licenses save . --ignore github.com/derailed/popeye --ignore github.com/xi2/xz --ignore modernc.org/mathutil --ignore github.com/deitch/magic --save_path ../library_licenses
     - if: win
       then: go build -v -o %LIBRARY_BIN%\k9s.exe -ldflags="-X github.com/derailed/k9s/cmd.version=${{ version }}"
       else: go build -v -o $PREFIX/bin/k9s -ldflags="-X github.com/derailed/k9s/cmd.version=${{ version }}"
