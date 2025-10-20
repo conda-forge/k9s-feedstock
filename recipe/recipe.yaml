@@ -1,6 +1,6 @@
 context:
   name: k9s
-  version: "0.50.15"
+  version: "0.50.16"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   - url: https://github.com/derailed/${{ name }}/archive/refs/tags/v${{ version }}.tar.gz
-    sha256: f97774984c31bf9b64224b0ab5003072734420007d37c1ad2c92f1361de4f23d
+    sha256: 09451bea1ba2cf1d29d68eb10b6e8ffe43425b99dd849a58d9b3e9992848139b
     target_directory: src
   - url: https://raw.githubusercontent.com/xi2/xz/refs/heads/master/LICENSE
     sha256: 5c640056d513f276d56635af7a0bed81cb7eac02a31b6e56d40c416557a8d8ce
